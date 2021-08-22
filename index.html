@@ -9,39 +9,73 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Logo</li>
-          <li>Store</li>
-          <li>Mac</li>
-          <li>iPad</li>
-          <li>iPhone</li>
-          <li>Watch</li>
-          <li>TV</li>
-          <li>Music</li>
-          <li>Support</li>
-          <li>Search</li>
-          <li>Cart</li>
-        </ul>
+      <nav class="navbar navbar-fixed-top">
+        <div class="nav-content">
+          <ul id="menu">
+            <li><img src="./images/apple.png" /></li>
+            <li>Store</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>TV</li>
+            <li>Music</li>
+            <li>Support</li>
+            <li>Search</li>
+            <li>Cart</li>
+          </ul>
+        </div>
       </nav>
-      <article>
-        Shop now at the Apple Store online with many great ways to buy. Get
-        free, no-contact delivery, Specialist help and
-        <a href="#" class="link" target="_blank" rel="noopener noreferrer"
-          >more</a
-        >
+      <article id="sale-line">
+        <p>
+          Shop now at the Apple Store online with many great ways to buy. Get
+          free, no-contact delivery, Specialist help and
+          <a href="#" class="link" target="_blank" rel="noopener noreferrer"
+            >more</a
+          >
+        </p>
       </article>
     </header>
     <main>
-      <section class="iphone12">
-        <img src="#" alt="iPhone 12 image with all available colors" />
+      <section class="product">
+        <div class="product-header">
+          <h2>iPhone 12</h2>
+          <h3>Blast past fast.</h3>
+          <p class="product-price">
+            From ₹69900
+            <sup>
+              <a href="#footnote-1" class="footnote">*</a>
+            </sup>
+            before&nbsp;trade‑in
+          </p>
+        </div>
+        <img src="images/iphone_12_updated__jepm2xpxncuy_largetall.jpg" />
       </section>
-      <section class="iphone12pro">
-        <img src="#" alt="iPhone 12 Pro in dark background" />
+      <section class="product">
+        <div class="product-header-2">
+          <h2>iPhone 12 Pro</h2>
+          <h3>It's a leap year.</h3>
+          <p class="product-price">
+            From ₹119900
+            <sup>
+              <a href="#footnote-1" class="footnote">*</a>
+            </sup>
+            before&nbsp;trade‑in
+          </p>
+        </div>
+        <img
+          alt="iPhone 12 Pro in dark background"
+          src="images/iphone_12_pro_us__e5oyysg4k0ya_largetall.jpg"
+        />
       </section>
-      <section class="ipadpro">
-        <img src="#" alt="iPad Pro with latest M1 chip" />
+      <section class="product">
+        <div class="product-header-3">
+          <h2>iPad Pro</h2>
+          <h3>Supercharged by the Apple M1 chip.</h3>
+        </div>
+        <img src="images/hero_ipad_pro_non_avail__fcrsmhs4b7ma_largetall.jpg" />
       </section>
+      <!-- <section class="grid"></section>
       <section class="grid-2">
         <span
           ><img src="#" alt="Education Pricing Offer for Mac or iPad."
@@ -55,11 +89,11 @@
       <section class="grid-2">
         <span><img src="#" alt="Apple Music with Dolby Atoms" /></span>
         <span><img src="#" alt="Apple tv+ show" /></span>
-      </section>
+      </section> -->
     </main>
     <footer>
       <ol>
-        <li>
+        <li id="footnote-1">
           *Listed pricing is Maximum Retail Price (inclusive of all taxes).
         </li>
         <li>
