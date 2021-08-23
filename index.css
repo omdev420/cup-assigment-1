@@ -15,31 +15,26 @@
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("fonts/SFProDisplay-Regular.eot"); /* IE9 Compat Modes */
-  src: url("fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("fonts/SFProDisplay-Regular.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("fonts/SFProDisplay-Regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("fonts/SFProDisplay-Regular.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
-  font-weight: 400;
+  src: url("./fonts/SFProDisplay-Semibold.eot");
+  src: url("./fonts/SFProDisplay-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+    url("./fonts/SFProDisplay-Semibold.woff") format("woff"),
+    url("./fonts/SFProDisplay-Semibold.ttf") format("truetype"),
+    url("./fonts/SFProDisplay-Semibold.svg#SFProDisplay-Semibold") format("svg");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("fonts/SFProDisplay-Regular.eot"); /* IE9 Compat Modes */
+  src: url("fonts/SFProDisplay-Regular.eot");
   src: url("fonts/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("fonts/SFProDisplay-Regular.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("fonts/SFProDisplay-Regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("fonts/SFProDisplay-Regular.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
-  font-weight: 600;
+    url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("fonts/SFProDisplay-Regular.woff") format("woff"),
+    url("fonts/SFProDisplay-Regular.ttf") format("truetype"),
+    url("fonts/SFProDisplay-Regular.svg#SFProDisplay-Regular") format("svg");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -55,13 +50,14 @@ body {
 
 h3 {
   font-family: "SF Pro Display", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 1.6em;
   margin-top: 5px;
+  padding-bottom: 10px;
 }
 h2 {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 56px;
+  font-size: 3em;
   /* line-height: 1.125; */
   font-weight: 600;
   /* letter-spacing: 0.004em; */
@@ -71,6 +67,7 @@ h2 {
 
 .product-price {
   color: #86868b;
+  font-size: 0.9em;
 }
 
 .product-header {
@@ -161,12 +158,13 @@ a:hover {
 
 #menu img {
   max-height: 20px;
+  padding: 0;
 }
 .navbar {
   background: rgba(0, 0, 0, 0.7);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: saturate(180%) blur(20px);
-  font-size: 14px;
+  font-size: 0.7em;
   z-index: 9999;
   height: 42px;
   max-height: 42px;
@@ -207,7 +205,7 @@ ul#menu {
   /* padding: 10px 10px 20px 20px; */
   padding: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: auto;
 }
 ul#menu li {
