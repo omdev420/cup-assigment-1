@@ -55,6 +55,7 @@ h3 {
   margin-top: 5px;
   padding-bottom: 10px;
 }
+
 h2 {
   font-family: "SF Pro Display", sans-serif;
   font-size: 3em;
@@ -70,37 +71,6 @@ h2 {
   font-size: 0.9em;
 }
 
-.product-header {
-  text-align: center;
-  position: absolute;
-  top: 150px;
-  left: 0;
-  width: 100%;
-}
-.product-header-2 {
-  text-align: center;
-  position: absolute;
-  color: rgb(245, 245, 247);
-  top: 900px;
-  left: 0;
-  width: 100%;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
-  grid-template-rows: repeat(3, 150px); /* 3 rows  */
-  grid-gap: 50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
-}
-
-.product-header-3 {
-  text-align: center;
-  position: absolute;
-  color: rgb(245, 245, 247);
-  top: 1600px;
-  left: 0;
-  width: 100%;
-}
-
 #sale-line p {
   word-wrap: break-word;
   line-height: 1;
@@ -113,6 +83,8 @@ sup a::after {
 
 sup a {
   color: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 sup a:hover {
@@ -148,12 +120,42 @@ a:hover {
   font-size: 14px;
 }
 
-.product img {
-  width: 100%;
+#product {
+  width: 100vw;
   height: 698px;
-  object-fit: cover;
-  object-position: center;
-  padding-bottom: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 14px;
+  background-image: url("images/iphone_12_updated__jepm2xpxncuy_largetall.jpg");
+}
+
+#product-two {
+  width: 100vw;
+  height: 698px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 14px;
+  background-image: url("images/iphone_12_pro_us__e5oyysg4k0ya_largetall.jpg");
+}
+
+#product-three {
+  width: 100vw;
+  height: 698px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 14px;
+  background-image: url("images/hero_ipad_pro_non_avail__fcrsmhs4b7ma_largetall.jpg");
+}
+
+#product-three .product-header {
+  color: rgb(245, 245, 247);
+}
+
+#product-two .product-header {
+  color: rgb(245, 245, 247);
 }
 
 #menu img {
@@ -277,4 +279,21 @@ footer a {
 
 #shop {
   color: #06c;
+}
+
+.learn-more {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+.learn-more div:first-of-type {
+  padding-right: 40px;
+}
+.product-header {
+  padding-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
