@@ -307,3 +307,31 @@ footer a {
 .no-arrow:hover {
   text-decoration: none;
 }
+
+.flex2by3 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+}
+
+.grid {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0px 0px 14px 14px;
+  width: calc(50vw - 28px);
+  height: 35vw;
+}
+.grid h2 {
+  font-weight: 400;
+  word-wrap: normal;
+}
+
+#gp1 {
+  background-image: url("images/promo_bts__bg3cb4kaoqoi_large.jpg");
+}
+
+* {
+  overflow-x: hidden;
+  overflow-wrap: normal;
+}
