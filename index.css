@@ -98,7 +98,6 @@ a::after {
   position: relative;
   font-size: 0.8em;
   vertical-align: text-top;
-  horizontal-align: top;
 }
 
 footer a::after {
@@ -349,17 +348,16 @@ footer a {
 sup {
   top: -0.5em;
 }
-.grid h2 sup {
+#sups {
   font-size: 16px;
   color: inherit;
+  display: inline-block;
+  top: -0.5em;
 }
-.grid h2 sup a {
-  color: inherit;
-}
-.grid h2 sup a::after {
+#sups::after {
   content: "";
 }
-.grid h2 sup a:hover {
+#sups:hover {
   color: #06c;
   text-decoration: none;
 }
@@ -464,4 +462,7 @@ a[href="#footnote-3"]::after {
 }
 .navbar {
   overflow: hidden;
+}
+.flex2by3 .grid .product-header sup {
+  font-size: 16px;
 }
