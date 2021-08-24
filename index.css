@@ -94,6 +94,12 @@ h2 {
 a::after {
   content: " ›";
 }
+.footnote {
+  position: relative;
+  font-size: 0.8em;
+  vertical-align: text-top;
+  horizontal-align: top;
+}
 
 footer a::after {
   content: "";
@@ -295,6 +301,7 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .no-arrow {
   text-decoration: none;
@@ -319,18 +326,135 @@ footer a {
   background-position: center;
   margin: 0px 0px 14px 14px;
   width: calc(50vw - 28px);
-  height: 35vw;
-}
-.grid h2 {
-  font-weight: 400;
-  word-wrap: normal;
+  height: 40vw;
+  /* font-size: 14px; */
 }
 
+.grid h3 {
+  font-size: 1.2em;
+}
+
+.grid h2 {
+  font-weight: 600;
+  font-size: 2.7em;
+  word-wrap: normal;
+  padding: 0px 80px;
+}
+.learn-more a {
+  font-size: 0.9em;
+}
+.learn-more div:last-child {
+  padding: 0;
+}
+sup {
+  top: -0.5em;
+}
+.grid h2 sup {
+  font-size: 16px;
+  color: inherit;
+}
+.grid h2 sup a {
+  color: inherit;
+}
+.grid h2 sup a::after {
+  content: "";
+}
+.grid h2 sup a:hover {
+  color: #06c;
+  text-decoration: none;
+}
+.learn-more sup {
+  font-size: 12px;
+  color: inherit;
+  position: relative;
+  left: -2px;
+  top: 0px;
+}
+.learn-more sup a {
+  color: inherit;
+}
+.learn-more sup a::after {
+  content: "";
+}
+.learn-more sup a:hover {
+  color: #06c;
+  text-decoration: none;
+}
+
+#watch-logo {
+  align-self: center;
+  height: 50px;
+  width: min-content;
+}
+.up-arrow::after {
+  content: "";
+}
+a[href="#footnote-3"]::after {
+  content: "";
+}
+#apple-music {
+  align-self: center;
+  height: 33px;
+  width: min-content;
+  padding: 0 0 10px 0;
+}
 #gp1 {
   background-image: url("images/promo_bts__bg3cb4kaoqoi_large.jpg");
+}
+#gp2 {
+  background-image: url("images/promo_watch_series_6_lte__f8lrasjnry2y_large.jpg");
+}
+#gp2 h3 {
+  color: #f5f5f7;
+}
+#gp3 {
+  background-image: url("images/promo_imac__crg641tip4q6_large.jpg");
+}
+#gp4 {
+  background-image: url("images/promo_airtag__e6b73a64nno2_large.jpg");
+}
+#gp5 {
+  background-image: url("images/promo_spatial_audio_billie_eilish__ltg83lkpcqq2_large.jpg");
+}
+#gp6 {
+  background-image: url("images/promo_coda__b4z92qy59piq_large.jpg");
 }
 
 * {
   overflow-x: hidden;
   overflow-wrap: normal;
+}
+#gp6 * {
+  color: #f5f5f7;
+}
+
+#gp5 * {
+  color: #f5f5f7;
+}
+.learn-more {
+  align-self: center;
+}
+
+#apple-tv {
+  align-self: center;
+  height: 31px;
+  width: min-content;
+  padding: 0 0 10px 0;
+}
+.play::after {
+  content: url("images/playsmall.png");
+  box-sizing: border-box;
+  height: 10px;
+}
+#award {
+  align-self: center;
+  height: 50px;
+  width: min-content;
+  padding: 35% 0 10px 0;
+}
+#coda {
+  align-self: center;
+  height: 62px;
+  width: min-content;
+  padding: 0 0 10px 0;
 }
