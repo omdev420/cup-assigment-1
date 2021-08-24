@@ -450,11 +450,15 @@ a[href="#footnote-3"]::after {
   align-self: center;
   height: 50px;
   width: min-content;
-  padding: 35% 0 10px 0;
+  padding: 100% 0 10px 0;
 }
 #coda {
   align-self: center;
   height: 62px;
   width: min-content;
   padding: 0 0 10px 0;
+}
+#at {
+  display: flex;
+  flex-direction: column;
 }
